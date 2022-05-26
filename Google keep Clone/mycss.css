@@ -1,0 +1,36 @@
+*{
+    margin: 0%; padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: lightblue;
+}
+.main{
+    height: 90vh; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_add{
+    height: 15vh; width: 20vw;
+    background-color: rgb(247, 247, 116);
+    display: flex;
+    justify-content: center; align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#plus{
+    height: 10vh;
+}
+.footer{
+    height: 10vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_image{
+    height: 3vh;
+}
