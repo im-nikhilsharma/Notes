@@ -6,19 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mycss.css">
+    <script src="javascript.js"></script>
     <title>Google Keep clone</title>
 </head>
 
 <body>
+    <div id="overmain">
+        <div id="noteid1">
+            <button id="edit_bt">Edit</button>
+            <button id="delet_bt">Delete</button>
+        </div>
+        <button id="add_new_id">Add</button>
+    </div>
     <div class="main">
-        <div class="button_add">
+        <div onclick="display()" class="button_add">
             <img id="plus" src="/images/8201360_add_plus_new_ui_icon.svg" alt="Add Here">
+        </div>
+    </div>
+    <div class="white_card" id="wc">
+        <h5 id="title_text">Title</h5>
+        <input id="input_text_title_id" type="text" placeholder="title">
+        <div onclick="nextbuttonid()" id="nextbutton"><img src="/images/8725545_arrow_right_icon.svg" alt="NEXT->">
+        </div>
+        <div class="second_white_card" id="wc2">
+            <h4 id="note_title_id"> <i> Note </i></h4>
+            <textarea name="" id="note_id" cols="30" rows="10"></textarea>
+            <div onclick="submite()" id="submite_bt_id">
+                <h4>Submite</h4>
+            </div>
         </div>
     </div>
     <div class="footer">
         <div class="footer_text">
-        <H3>Google Keep Clone Made with <img id="footer_image" src="/images/3091262_idea_lightbulb_love_thought_icon.svg" alt="Love"> By Nikhil Sharma</H3>
+            <H3>Google Keep Clone Made with <img id="footer_image"
+                    src="/images/3091262_idea_lightbulb_love_thought_icon.svg" alt="Love"> By Nikhil Sharma</H3>
         </div>
     </div>
 </body>
+
 </html>

@@ -3,9 +3,6 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
-    background-color: lightblue;
-}
 .main{
     height: 90vh; 
     background-color: white;
@@ -13,8 +10,13 @@ body{
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 700px) {
+    .main {
+      background-color: rgb(245, 238, 44);
+    }
+}
 .button_add{
-    height: 15vh; width: 20vw;
+    height: 100px; width: 100px;
     background-color: rgb(247, 247, 116);
     display: flex;
     justify-content: center; align-items: center;
@@ -33,4 +35,76 @@ body{
 }
 #footer_image{
     height: 3vh;
+}
+.white_card{
+    height: 50vh; width: 70vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px;
+    z-index: +111;
+    position: absolute;
+    margin:auto;
+    top: 100px; left: 15%;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#title_text{
+    font-size:xx-large;
+}
+#input_text_title_id{
+    height: 10vh; width: 30vw;
+    border-radius: 100px;
+}
+input{
+    font-size: x-large;
+}
+#nextbutton{
+    background-color: blue;
+    height: 50px; width: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+#nextbutton:hover{
+    background-color: rgb(223, 246, 255);
+}
+.second_white_card{
+    background-color: rgb(223, 246, 255);
+    height: 49vh; width: 69vw;
+    position: absolute;
+    visibility: hidden;
+    display: flex; align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#note_title_id{
+    font-size: xx-large;
+}
+#submite_bt_id{
+    background-color: yellow;
+    height: 6vh; width: 15vw;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#overmain{
+    background-color: blue;
+    height: 90vh; width: 100vw;
+    position: absolute; 
+    z-index: +1111;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#noteid1{
+    height: 40vh; width: 70vw;
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
